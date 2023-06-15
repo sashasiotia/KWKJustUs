@@ -15,7 +15,7 @@ struct ContentView: View {
                 }
     
                 .toolbar {
-                    NavigationLink(destination: Text("About")) {
+                    NavigationLink(destination: Text("About Me")) {
                         Text("About")
                     }
                 }
