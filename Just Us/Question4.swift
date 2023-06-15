@@ -21,40 +21,47 @@ struct Question4: View {
                                 .multilineTextAlignment(.leading)
                         }
                     }
-                Text("Question?")
-                    . font(.title)
-                    . padding(.bottom)
-                Button("Answer 1") {
-                    question4output="Wrong"
+                Text("Saanvi is applying to be the manager of a construction site. The hiring manager believes that Saanvi is not qualified for the job because she is a woman and women aren’t apparently “not into this sort of stuff” and she will be too nice for a manager. What should she do?")
+                    .font(.headline)
+                   .fontWeight(.semibold)
+                   .foregroundColor(Color.black)
+                   .multilineTextAlignment(.leading)
+                   . padding([.leading, .bottom, .trailing])
+                Button("A) Saanvi cries herself to sleep every night") {
+                    question4output="Incorrect!"
                 }
-                .font(.title2)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.purple)
-                Button("Answer 2"){
-                    question4output="Wrong"
+                Button("B) She screams at the hiring manager and storms out of the office"){
+                    question4output="Nope!"
                 }
-                .font(.title2)
+                .padding(.horizontal)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.blue)
                 
-                Button("Answer 3") {
-                    question4output="Correct!"
+                Button("C) She apologizes and just accepts it and walks away") {
+                    question4output="Wrong, try again!"
                 }
-                .font(.title2)
+                .padding(.horizontal)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.yellow)
                 
-                Button("Answer 4") {
-                    question4output="Wrong"
+                Button("D) Saanvi stands up for herself and tells the hire manager that he is being biased and sexist and just because she is a woman doesn’t mean she isn’t qualified. She even posts on her socials about this experience which many women relate to") {
+                    question4output="Correct, even though her hiring manager is rude by staying calm it shows she is more mature. Also, not keeping silent about the injustices that happen to you can enlighten others but also help others speak up if the same thing has happened to them."
                 }
-                .font(.title2)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.green)
                 
                 Text("\(question4output)")
-                    . font(.largeTitle)
+                    . font(.callout)
                     .fontWeight(.bold)
-                    . padding(.top, 90.0)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .padding(.all)
                 //next question transition is below
                 
                 NavigationLink(destination: Question5 ()) {

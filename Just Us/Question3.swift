@@ -21,40 +21,47 @@ struct Question3: View {
                                 .multilineTextAlignment(.leading)
                         }
                     }
-                Text("Question?")
-                    . font(.title)
-                    . padding(.bottom)
-                Button("Answer 1") {
-                    question3output="Wrong"
-                }
-                .font(.title2)
+                Text("Amir is looking for actors for his new movie. He struggles with casting one character, a bisexual Indian-American making his way through high school. What should Amir focus on when considering the auditionees for this role?")
+                    . font(.headline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.leading)
+                    . padding([.leading, .bottom, .trailing])
+                Button("A) Evaluate the actors' ability to portray the character's complexity and nuanced experiences as a bisexual Indian-American") {
+                    question3output="Correct, this option considers both the actor’s sexuality and culture, which is important in portraying the character accurately, as well as acting skills."}
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.purple)
-                Button("Answer 2"){
-                    question3output="Wrong"
+                
+                Button("B) Cast Ryan Reynolds because he's hot and famous"){
+                    question3output="Nope!"
                 }
-                .font(.title2)
+                .padding(.horizontal)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.blue)
                 
-                Button("Answer 3") {
-                    question3output="Correct!"
+                Button("Disregard an actor's sexual orientation and cultural background, solely focusing on their acting skills") {
+                    question3output="Wrong, try again!"
                 }
-                .font(.title2)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.yellow)
                 
-                Button("Answer 4") {
-                    question3output="Wrong"
+                Button("Prioritize an actor's sexual orientation over their acting abilities and cultural understanding") {
+                    question3output="Incorrect!"
                 }
-                .font(.title2)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.green)
                 
                 Text("\(question3output)")
-                    . font(.largeTitle)
-                    .fontWeight(.bold)
-                    . padding(.top, 90.0)
+                . font(.callout)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .padding(.all)
+                
+                Spacer()
                 //next question transition is below
                 
                 NavigationLink(destination: Question4 ()) {

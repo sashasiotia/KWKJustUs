@@ -23,40 +23,51 @@ struct Question2: View {
                         }
                     }
                 
-                Text("Question?")
-                    . font(.title)
-                    . padding(.bottom)
-                Button("Answer 1") {
-                    question2output="Wrong"
+                Text("Sonya is hiring new employees for the media company she works at. While considering the different applicants, she wonders what qualities would be most beneficial for the company and its consumers. What should be Sonya’s priority?")
+                .font(.headline)
+               .fontWeight(.semibold)
+               .foregroundColor(Color.black)
+               .multilineTextAlignment(.leading)
+               . padding([.leading, .bottom, .trailing])
+                Button("A) Prioritizing previous work experience as those individuals will know what they’re doing") {
+                    question2output="Nope!"
                 }
-                .font(.title2)
+                .padding(.horizontal)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.purple)
-                Button("Answer 2"){
-                    question2output="Wrong"
+                Button("B) Employing people from diverse backgrounds to contribute to the perspectives the company holds"){
+                    question2output="Correct, while the other options do cover valuable qualities, this one keeps the company’s best interests in mind. Media companies can be very influential and bring a lot of opinion, so it’s important that their employees can represent all different perspectives."
                 }
-                .font(.title2)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.blue)
                 
-                Button("Answer 3") {
-                    question2output="Correct!"
+                Button("C) Focusing on those with the highest levels of education and degrees as they have the most knowledge ") {
+                    question2output="Incorrect!"
                 }
-                .font(.title2)
+                .padding(.horizontal)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.yellow)
                 
-                Button("Answer 4") {
-                    question2output="Wrong"
+                Button("D) Choosing those whose values align the most with the company’s") {
+                    question2output="Wrong, try again!"
                 }
-                .font(.title2)
+                .padding(.horizontal)
+                .font(.title3)
                 .buttonStyle(.borderedProminent)
                 .tint(.green)
                 
                 Text("\(question2output)")
-                    . font(.largeTitle)
+                    . font(.callout)
                     .fontWeight(.bold)
-                    . padding(.top, 90.0)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .padding(.all)
+                    
+                Spacer()
+            
                 //next question transition is below
                 
                 NavigationLink(destination: Question3 ()) {

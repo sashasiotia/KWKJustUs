@@ -22,40 +22,47 @@ struct Question5: View {
                         }
                     }
                 
-                Text("Question?")
-                    . font(.title)
-                    . padding(.bottom)
-                Button("Answer 1") {
-                    question5output="Wrong"
+                Text("Mia is writing an article about racism students face at her school. In order to get the most accurate results who should she ask?")
+                    .font(.title3)
+                   .fontWeight(.semibold)
+                   .foregroundColor(Color.black)
+                   .multilineTextAlignment(.leading)
+                   . padding([.leading, .bottom, .trailing])
+                Button("A) Every 5th student she sees in the hallways") {
+                    question5output="Correct, because option A provides Mia with the most diverse group of students as she will be able to ask students from all grade levels and classes. "
                 }
                 .font(.title2)
                 .buttonStyle(.borderedProminent)
                 .tint(.purple)
-                Button("Answer 2"){
-                    question5output="Wrong"
+                Button("B) The students who take AP Lang"){
+                    question5output="Wrong, try again!"
                 }
                 .font(.title2)
                 .buttonStyle(.borderedProminent)
                 .tint(.blue)
                 
-                Button("Answer 3") {
-                    question5output="Correct!"
+                Button("C) The freshmen because they get bullied all the time") {
+                    question5output="Incorrect!"
                 }
                 .font(.title2)
                 .buttonStyle(.borderedProminent)
                 .tint(.yellow)
                 
-                Button("Answer 4") {
-                    question5output="Wrong"
+                Button("D) Her friends") {
+                    question5output="Nope!"
                 }
                 .font(.title2)
                 .buttonStyle(.borderedProminent)
                 .tint(.green)
                 
                 Text("\(question5output)")
-                    . font(.largeTitle)
+                    . font(.callout)
                     .fontWeight(.bold)
-                    . padding(.top, 90.0)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .padding(.all)
+                Spacer()
+
                 //next question transition is below
                 
                // NavigationLink(destination: Question3 ()) {
