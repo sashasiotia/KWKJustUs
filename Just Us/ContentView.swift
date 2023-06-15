@@ -15,13 +15,13 @@ struct ContentView: View {
                 }
     
                 .toolbar {
-                    NavigationLink(destination: Text("About Me")) {
+                    NavigationLink(destination: Text("About")) {
                         Text("About")
                     }
                 }
                 Text("HOME")
                 NavigationLink(destination: Defintion ()) {
-                    Text("Defintion")
+                    Text("Definition")
                         . padding(.vertical)
                 }
                 NavigationLink(destination: QuizInstructions ()) {

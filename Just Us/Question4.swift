@@ -13,6 +13,14 @@ struct Question4: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Text("")
+                    
+                    .toolbar {
+                        NavigationLink(destination: ContentView()) {
+                            Text("Home")
+                                .multilineTextAlignment(.leading)
+                        }
+                    }
                 Text("Question?")
                     . font(.title)
                     . padding(.bottom)
@@ -54,6 +62,9 @@ struct Question4: View {
                         . padding(.vertical)
                 }
             }
+            .navigationTitle("Question 4")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarHidden(false)
         }
         
     }
