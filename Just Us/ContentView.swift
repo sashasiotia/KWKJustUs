@@ -26,7 +26,7 @@ struct ContentView: View {
                 }
                 NavigationLink(destination: QuizInstructions ()) {
                     Text("Quiz")
-                        . padding(.vertical)
+                        . padding(.bottom)
                 }
             NavigationLink(destination: Resources ()) {
                 Text("Resources")

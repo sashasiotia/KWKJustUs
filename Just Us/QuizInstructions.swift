@@ -9,9 +9,21 @@ import SwiftUI
 
 struct QuizInstructions: View {
     var body: some View {
-        NavigationLink(destination: Question1 ()) {
-            Text("Begin Quiz")
-                . padding(.vertical)
+        VStack{
+            Text("You will be given a scenario and choose the best way to approach each siuation ")
+                .font(.headline)
+                .fontWeight(.regular)
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.center)
+                .padding(.all, 7.0)
+
+            NavigationLink(destination: Question1 ()) {
+                Text("Begin Quiz")
+                    .foregroundColor(Color.blue)
+                    .multilineTextAlignment(.center)
+                    . padding(.all, 6.0)
+                
+            }
         }
     }
 }
