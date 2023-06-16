@@ -18,7 +18,7 @@ struct ContentView: View {
             .toolbar {
                 NavigationLink(destination: Text("Hi! We are KWK Scholars and for our final project we decide to make an app about Social Justice! Thanks for taking a look at our app!")
                     .font(.headline)
-                    .padding(/*@START_MENU_TOKEN@*/.all, 9.0/*@END_MENU_TOKEN@*/)) {
+                    .padding(.all, 9.0)) {
                         Text("About")
                             .font(.headline)
                             .foregroundColor(Color(hue: 1.0, saturation: 0.213, brightness: 0.374))
@@ -30,29 +30,32 @@ struct ContentView: View {
                     .padding(200)
                     .frame(width: 390.0, height: 901.0)
                     .background(
-                        Image("JustUs1")
+                        Image("JustUs4")
                             .resizable()
+                            .aspectRatio(contentMode: .fill)
+                        
+                        
                     )
-            
+                
                 VStack{
-            
+                    
                     NavigationLink(destination: Defintion ()) {
                         Text("Definition")
-                            . padding(.all, 50.0).font(.headline)
+                            . padding(.all, 35.0).font(.headline)
                             .foregroundColor(Color(hue: 1.0, saturation: 0.213, brightness: 0.374))
                     }
                     NavigationLink(destination: QuizInstructions ()) {
                         Text("Quiz")
-                            . padding(.bottom, 50.0)
+                            . padding(.bottom, 34)
                             .font(.headline)
                             .foregroundColor(Color(hue: 1.0, saturation: 0.213, brightness: 0.374))
-
+                        
                     }
                     NavigationLink(destination: Resources ()) {
                         Text("Resources")
                             .font(.headline)
                             .foregroundColor(Color(hue: 1.0, saturation: 0.213, brightness: 0.374))
-                            . padding(.bottom, 172.0)
+                            . padding(.bottom, 158.0)
                     }
                     .navigationTitle("Home")
                     .navigationBarTitleDisplayMode(.inline)
