@@ -18,7 +18,8 @@ struct ContentView: View {
             .toolbar {
                 NavigationLink(destination: Text("Hi! We are KWK Scholars and for our final project we decide to make an app about Social Justice! Thanks for taking a look at our app!")
                     .font(.headline)
-                    .padding(.all, 9.0)) {
+                    .padding(.all, 9.0))
+                {
                         Text("About")
                             .font(.headline)
                             .foregroundColor(Color(hue: 1.0, saturation: 0.213, brightness: 0.374))

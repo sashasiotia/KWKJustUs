@@ -14,7 +14,7 @@ struct Resources: View {
                 .padding(200)
                 .frame(width: 390.0, height: 601.0)
                 .background(
-                    Image("JustUs9")
+                    Image("JustUs7")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         
