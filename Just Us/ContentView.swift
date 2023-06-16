@@ -33,8 +33,6 @@ struct ContentView: View {
                         Image("JustUs4")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                        
-                        
                     )
                 
                 VStack{
