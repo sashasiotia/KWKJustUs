@@ -43,14 +43,14 @@ struct Question4: View {
                             }
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.purple)
+                            .tint(Color(hue: 1.0, saturation: 0.258, brightness: 0.922))
                             Button("B) She screams at the hiring manager and storms out of the office"){
                                 question4output="Nope!"
                             }
                             .padding(.horizontal)
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.blue)
+                            .tint(Color(hue: 1.0, saturation: 0.333, brightness: 0.814))
                             
                             Button("C) She apologizes and just accepts it and walks away") {
                                 question4output="Wrong, try again!"
@@ -58,15 +58,14 @@ struct Question4: View {
                             .padding(.horizontal)
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.yellow)
+                            .tint(Color(hue: 1.0, saturation: 0.276, brightness: 0.591))
                             
                             Button("D) Saanvi stands up for herself and tells the hire manager that he is being biased and sexist and just because she is a woman doesn’t mean she isn’t qualified. She even posts on her socials about this experience which many women relate to") {
                                 question4output="Correct, even though her hiring manager is rude by staying calm it shows she is more mature. Also, not keeping silent about the injustices that happen to you can enlighten others but also help others speak up if the same thing has happened to them."
                             }
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.green)
-                            
+                            .tint(Color(hue: 1.0, saturation: 0.184, brightness: 0.709))
                             Text("\(question4output)")
                                 . font(.callout)
                                 .fontWeight(.bold)

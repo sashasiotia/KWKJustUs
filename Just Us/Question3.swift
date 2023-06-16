@@ -42,7 +42,7 @@ struct Question3: View {
                                 question3output="Correct, this option considers both the actor’s sexuality and culture, which is important in portraying the character accurately, as well as acting skills."}
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.purple)
+                            .tint(Color(hue: 1.0, saturation: 0.258, brightness: 0.922))
                             
                             Button("B) Cast Ryan Reynolds because he's hot and famous"){
                                 question3output="Nope!"
@@ -50,21 +50,21 @@ struct Question3: View {
                             .padding(.horizontal)
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.blue)
+                            .tint(Color(hue: 1.0, saturation: 0.333, brightness: 0.814))
                             
                             Button("Disregard an actor's sexual orientation and cultural background, solely focusing on their acting skills") {
                                 question3output="Wrong, try again!"
                             }
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.yellow)
+                            .tint(Color(hue: 1.0, saturation: 0.276, brightness: 0.591))
                             
                             Button("Prioritize an actor's sexual orientation over their acting abilities and cultural understanding") {
                                 question3output="Incorrect!"
                             }
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.green)
+                            .tint(Color(hue: 1.0, saturation: 0.184, brightness: 0.709))
                             
                             Text("\(question3output)")
                                 . font(.callout)

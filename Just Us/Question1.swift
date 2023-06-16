@@ -43,27 +43,28 @@ struct Question1: View {
                     }
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
-                    .tint(.purple)
+                    .tint(Color(hue: 1.0, saturation: 0.258, brightness: 0.922))
                     Button("B) Ask Chris to convince their boss to raise her salary as well"){
                         question1output="Nope!"
                     }
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
-                    .tint(.blue)
+                    .tint(Color(hue: 1.0, saturation: 0.333, brightness: 0.814))
                     
                     Button("C) Talk to her boss, discussing the possible biases behind this") {
                         question1output="Correct! This decision is the best as Maryam stands up for herself in a reasonable way, addressing the inequality occurring at her workplace, which could be helpful to the other women at the company who are unaware of the issue."
                     }
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
-                    .tint(.yellow)
+                    .tint(Color(hue: 1.0, saturation: 0.276, brightness: 0.591))
                     
                     Button("D) Sue her boss") {
                         question1output="Wrong, try again!"
                     }
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                    .tint(Color(hue: 1.0, saturation: 0.184, brightness: 0.709))
+                    
                     
                     Text("\(question1output)")
                         . font(.callout)

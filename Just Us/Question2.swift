@@ -49,13 +49,13 @@ struct Question2: View {
                             .padding(.horizontal)
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.purple)
+                            .tint(Color(hue: 1.0, saturation: 0.258, brightness: 0.922))
                             Button("B) Employing people from diverse backgrounds to contribute to the perspectives the company holds"){
                                 question2output="Correct, while the other options do cover valuable qualities, this one keeps the company’s best interests in mind. Media companies can be very influential and bring a lot of opinion, so it’s important that their employees can represent all different perspectives."
                             }
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.blue)
+                            .tint(Color(hue: 1.0, saturation: 0.333, brightness: 0.814))
                             
                             Button("C) Focusing on those with the highest levels of education and degrees as they have the most knowledge ") {
                                 question2output="Incorrect!"
@@ -63,7 +63,7 @@ struct Question2: View {
                             .padding(.horizontal)
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.yellow)
+                            .tint(Color(hue: 1.0, saturation: 0.276, brightness: 0.591))
                             
                             Button("D) Choosing those whose values align the most with the company’s") {
                                 question2output="Wrong, try again!"
@@ -71,7 +71,7 @@ struct Question2: View {
                             .padding(.horizontal)
                             .font(.title3)
                             .buttonStyle(.borderedProminent)
-                            .tint(.green)
+                            .tint(Color(hue: 1.0, saturation: 0.184, brightness: 0.709))
                             
                             Text("\(question2output)")
                                 . font(.callout)

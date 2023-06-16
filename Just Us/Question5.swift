@@ -44,27 +44,28 @@ struct Question5: View {
                         }
                         .font(.title2)
                         .buttonStyle(.borderedProminent)
-                        .tint(.purple)
+                        .tint(Color(hue: 1.0, saturation: 0.258, brightness: 0.922))
+                        
                         Button("B) The students who take AP Lang"){
                             question5output="Wrong, try again!"
                         }
                         .font(.title2)
                         .buttonStyle(.borderedProminent)
-                        .tint(.blue)
+                        .tint(Color(hue: 1.0, saturation: 0.333, brightness: 0.814))
                         
                         Button("C) The freshmen because they get bullied all the time") {
                             question5output="Incorrect!"
                         }
                         .font(.title2)
                         .buttonStyle(.borderedProminent)
-                        .tint(.yellow)
+                        .tint(Color(hue: 1.0, saturation: 0.276, brightness: 0.591))
                         
                         Button("D) Her friends") {
                             question5output="Nope!"
                         }
                         .font(.title2)
                         .buttonStyle(.borderedProminent)
-                        .tint(.green)
+                        .tint(Color(hue: 1.0, saturation: 0.184, brightness: 0.709))
                         
                         Text("\(question5output)")
                             . font(.callout)
