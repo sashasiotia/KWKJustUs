@@ -38,6 +38,7 @@ struct ContentView: View {
                 VStack{
                     
                     NavigationLink(destination: Defintion ()) {
+                        
                         Text("Definition")
                             . padding(.all, 35.0).font(.headline)
                             .foregroundColor(Color(hue: 1.0, saturation: 0.213, brightness: 0.374))

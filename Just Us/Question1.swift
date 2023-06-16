@@ -13,21 +13,31 @@ struct Question1: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
+            ZStack{
                 Text("")
-                    
-                    .toolbar {
-                        NavigationLink(destination: ContentView()) {
-                            Text("Home")
-                                .multilineTextAlignment(.leading)
+                    .padding(200)
+                    .frame(width: 390.0, height: 601.0)
+                    .background(
+                        Image("JustUs7")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    )
+                
+                
+                VStack {
+                    Text("")
+                        .toolbar {
+                            NavigationLink(destination: ContentView()) {
+                                Text("Home")
+                                    .multilineTextAlignment(.leading)
+                            }
                         }
-                    }
                     Text("Maryam has been working at her company for four years, and during a conversation with Chris, a male employee who has the same position but has only been working at the company for two years, she discovers she makes less money than him. How should Maryam move forward?")
-                    . font(.headline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.leading)
-                    . padding([.leading, .bottom, .trailing])
+                        . font(.headline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.black)
+                        .multilineTextAlignment(.leading)
+                        . padding([.leading, .bottom, .trailing])
                     Button("A) Do nothing if she’s content with her salary") {
                         question1output="Incorrect!"
                     }
@@ -56,12 +66,12 @@ struct Question1: View {
                     .tint(.green)
                     
                     Text("\(question1output)")
-                    . font(.callout)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .padding(.all)
-                Spacer()
-                        
+                        . font(.callout)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .padding(.all)
+                    Spacer()
+                    
                     //next question transition is below
                     
                     NavigationLink(destination: Question2 ()) {
@@ -69,13 +79,13 @@ struct Question1: View {
                             . padding(.vertical)
                     }
                 }
-            .navigationTitle("Question 1")
+                .navigationTitle("Question 1")
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarHidden(false)
             }
         }
         
-        
+    }
         
         struct Question1_Previews: PreviewProvider {
             static var previews: some View {
@@ -84,5 +94,6 @@ struct Question1: View {
         }
     }
 
-//put in a toolbar with a home button/a quit quiZ button
-//incorporate emojis and fun colors
+    //put in a toolbar with a home button/a quit quiZ button
+    //incorporate emojis and fun colors
+

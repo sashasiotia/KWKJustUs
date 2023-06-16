@@ -17,9 +17,9 @@ struct QuizInstructions: View {
                     Image("JustUs5")
                         .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
                         .aspectRatio(contentMode: .fill)
-                        
-                        
-                        
+                    
+                    
+                    
                 )
             
             
@@ -43,11 +43,11 @@ struct QuizInstructions: View {
             .padding(.bottom, 170.0)
         }
     }
-    
+}
     struct QuizInstructions_Previews: PreviewProvider {
         static var previews: some View {
             QuizInstructions()
             
         }
     }
-}
+
